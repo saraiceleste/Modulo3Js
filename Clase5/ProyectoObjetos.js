@@ -25,15 +25,25 @@ let LaOdisea = {
     autor: "Homero",
     anio: -800,
     estado: "disponible",
-
+ 
     describirLibro: function() {
         console.log(this.titulo + " es un poema épico atribuido a " + this.autor + ", escrito en el " + this.anio + ". Actualmente se encuentra " + this.estado);
     }
 }
 
+let AfterBook = {
+    titulo: "after",
+    autor: "chris",
+    anio: 2003,
+    estado: "diponible",
 
+    describirLibro: function() {
+        console.log(this.titulo + " esta escrito por " + this.autor + " en el año de " + this.anio + " Actualmente se encuentra " + this.estado)
+    }
+}
 
 
 principito.describirLibro();
 cincuentaSombrasGrey.describirLibro();
 LaOdisea.describirLibro();
+AfterBook.describirLibro();
