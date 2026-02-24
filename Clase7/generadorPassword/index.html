@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@24,400,0">
+</head>
+<body>
+  <main class="main-container">
+    <h1>Password Generator</h1>
+
+    <div class="first-container">
+      <span class="PASS-STYLE">P4$5W0rD!</span>
+      <button class="copy-btn" id="copy-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e3e3e3"><path d="M360-240q-29.7 0-50.85-21.15Q288-282.3 288-312v-480q0-29.7 21.15-50.85Q330.3-864 360-864h384q29.7 0 50.85 21.15Q816-821.7 816-792v480q0 29.7-21.15 50.85Q773.7-240 744-240H360Zm0-72h384v-480H360v480ZM216-96q-29.7 0-50.85-21.15Q144-138.3 144-168v-552h72v552h456v72H216Zm144-216v-480 480Z"/></svg>
+      </button>
+    </div>
+
+    <div class="second-container">
+      <div class="text-sli">
+        <p>Character Length</p> 
+        <p id="lengthValue">10</p>
+      </div>
+
+      <input type="range" min="1" max="20" value="10" class="slider" id="myRange">
+
+      <div class="checkbox-group">
+        <label for="upper">
+          <input type="checkbox" id="upper" class="mi-checkbox">
+          Include Uppercase Letters
+        </label>
+        
+        <label for="lower">
+          <input type="checkbox" id="lower" class="mi-checkbox">
+          Include Lowercase Letters
+        </label>
+        
+        <label for="numbers">
+          <input type="checkbox" id="numbers" class="mi-checkbox">
+          Include Numbers
+        </label>
+        
+        <label for="symbols">
+          <input type="checkbox" id="symbols" class="mi-checkbox">
+          Include Symbols
+        </label>
+
+        <div class="strength-indicator">
+          <p>STRENGTH</p>
+          <p id="strengthText">MEDIUM</p> 
+        </div>
+
+        <button class="generate-btn">Generate</button>
+      </main>
+
+  <script src="gen.js" defer></script>
+</body>
+</html>

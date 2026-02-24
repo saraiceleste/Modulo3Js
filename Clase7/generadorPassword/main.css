@@ -1,0 +1,151 @@
+/* Contenedor principal para centrar todo */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #100f15;
+  font-family: Arial, sans-serif;
+}
+
+h1 { color: #817d92; font-size: 1.5rem; margin-bottom: 20px; }
+
+.first-container, .second-container {
+  background-color: #24232c;
+  width: 350px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.first-container {
+  display: flex;           /* Activa el modo flexible */
+  justify-content: space-between; /* Empuja los elementos a los extremos */
+  align-items: center;     /* Los centra verticalmente entre sí */ 
+  padding: 0 20px;         /* Espacio interno para que no toquen los bordes */
+  height: 60px;        
+
+}
+
+.PASS-STYLE {
+  color: #e6e5ea;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.copy-btn:hover {
+  filter: brightness(1.5); /* Efecto simple al pasar el ratón */
+}
+
+
+.second-container{
+    height: auto; 
+    min-height: 330px;
+}
+
+
+.text-sli { 
+     display: flex;          
+    justify-content: space-between; /* Empuja los elementos a los extremos */
+    align-items: center; 
+    color: #e6e5ea; 
+    margin-top: 5px;
+    margin-bottom: 8px;
+ }
+
+ #lengthValue {
+    font-weight: bold;
+    color: #a4ffaf;
+    font-size: 22px;
+ }
+
+/* --- ESTILOS DEL SLIDER --- */
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ffffff; /* EL COLOR SÓLIDO QUE QUERÍAS */
+  outline: none;
+  margin: 20px 0;
+}
+
+/* El círculo del slider  */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #e6e5ea;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #e6e5ea;
+}
+
+/* El círculo del slider (Firefox) */
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #e6e5ea;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Estilos de los Checkboxes y Etiquetas */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+label {
+  color: #e6e5ea;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.mi-checkbox {
+  accent-color: #a4ffaf; 
+  width: 18px;
+  height: 18px;
+}
+
+.strength-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e6e5ea;
+    background-color: #100f15;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 15px;
+    height: 20px;
+}
+
+.generate-btn {
+  background-color: #a4ffaf;
+  border: none;
+  color: #100f15;
+  font-weight: bold;
+  cursor: pointer;
+  height: 40px;
+  width: 350px;
+}
+
+.generate-btn:hover {
+    background-color: transparent;
+    color: #a4ffaf;
+}
+
